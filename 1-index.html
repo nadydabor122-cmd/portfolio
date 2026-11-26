@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Nady Ahmed Nady | Software Developer</title>
+<meta name="description" content="Nady Ahmed Nady, software developer. Builds real point-of-sale and business software that runs in a live cafe.">
+<meta name="theme-color" content="#050505">
+<style>
+:root{--bg:#050505;--card:#0e0e0e;--line:#1f1f1f;--tx:#f2efe8;--mut:#8d8a82;--gold:#e8b44a;--gold2:#ffd98a}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--tx);font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.6;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;background:radial-gradient(600px 400px at 85% -5%,rgba(232,180,74,.16),transparent 70%),radial-gradient(500px 400px at 0% 40%,rgba(232,180,74,.07),transparent 70%);pointer-events:none;z-index:0}
+.w{max-width:1080px;margin:0 auto;padding:0 22px;position:relative;z-index:1}
+nav{position:sticky;top:0;z-index:10;backdrop-filter:blur(14px);background:rgba(5,5,5,.7);border-bottom:1px solid var(--line)}
+nav .w{display:flex;justify-content:space-between;align-items:center;height:60px}
+.logo{font-weight:800;letter-spacing:.5px}.logo b{color:var(--gold)}
+nav ul{display:flex;gap:22px;list-style:none;font-size:14px}
+nav a{color:var(--mut);text-decoration:none;transition:.2s}nav a:hover{color:var(--gold)}
+.hero{padding:110px 0 80px}
+.tag{display:inline-flex;gap:8px;align-items:center;border:1px solid var(--line);padding:6px 14px;border-radius:99px;font-size:13px;color:var(--mut)}
+.dot{width:8px;height:8px;border-radius:50%;background:#4ade80;box-shadow:0 0 10px #4ade80}
+h1{font-size:clamp(44px,9vw,92px);line-height:1.02;font-weight:800;letter-spacing:-2px;margin:26px 0 20px}
+h1 span{background:linear-gradient(90deg,var(--gold),var(--gold2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.lead{font-size:clamp(17px,2.4vw,22px);color:#c9c5ba;max-width:640px}
+.cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:34px}
+.btn{padding:14px 26px;border-radius:12px;font-weight:700;text-decoration:none;font-size:15px;transition:.25s;display:inline-block}
+.p{background:linear-gradient(90deg,var(--gold),var(--gold2));color:#0a0a0a}.p:hover{transform:translateY(-2px);box-shadow:0 10px 30px rgba(232,180,74,.3)}
+.g{border:1px solid #333;color:var(--tx)}.g:hover{border-color:var(--gold);color:var(--gold)}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:70px}
+.st{border:1px solid var(--line);background:var(--card);border-radius:16px;padding:20px}
+.st b{display:block;font-size:30px;color:var(--gold)}.st span{font-size:13px;color:var(--mut)}
+section{padding:80px 0}
+.k{color:var(--gold);font-size:13px;letter-spacing:3px;text-transform:uppercase;font-weight:700}
+h2{font-size:clamp(30px,5vw,46px);letter-spacing:-1px;margin:10px 0 36px}
+.proj{display:grid;grid-template-columns:1.1fr 1fr;gap:34px;border:1px solid var(--line);background:linear-gradient(160deg,#111,#070707);border-radius:24px;padding:34px;margin-bottom:26px;transition:.3s}
+.proj:hover{border-color:rgba(232,180,74,.5)}
+.proj h3{font-size:28px;margin:6px 0 10px}
+.proj p{color:#bdb9ae;margin-bottom:16px}
+.proj ul{list-style:none;margin-bottom:20px}
+.proj li{padding-left:22px;position:relative;margin:7px 0;color:#d8d4c9;font-size:15px}
+.proj li:before{content:"";position:absolute;left:0;top:10px;width:10px;height:2px;background:var(--gold)}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:22px}
+.chip{font-size:12px;padding:5px 12px;border-radius:99px;background:rgba(232,180,74,.1);color:var(--gold2);border:1px solid rgba(232,180,74,.25)}
+.mock{border-radius:16px;border:1px solid #262626;background:#090909;padding:14px;align-self:center}
+.bar{display:flex;gap:6px;margin-bottom:12px}.bar i{width:10px;height:10px;border-radius:50%;background:#333}
+.row{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.tile{background:#151515;border:1px solid #232323;border-radius:10px;padding:14px 8px;text-align:center;font-size:12px;color:#cfcabd}
+.tile.a{background:rgba(232,180,74,.12);border-color:rgba(232,180,74,.4);color:var(--gold2)}
+.tot{display:flex;justify-content:space-between;margin-top:12px;padding:12px;border-radius:10px;background:linear-gradient(90deg,var(--gold),var(--gold2));color:#0a0a0a;font-weight:800;font-size:14px}
+.sk{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.box{border:1px solid var(--line);background:var(--card);border-radius:18px;padding:24px}
+.box h4{color:var(--gold);margin-bottom:12px;font-size:15px}
+.box .chips{margin:0}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start}
+.about p{color:#c9c5ba;margin-bottom:14px}
+.contact{text-align:center;border:1px solid rgba(232,180,74,.35);border-radius:28px;padding:70px 24px;background:radial-gradient(500px 250px at 50% 0,rgba(232,180,74,.15),transparent 70%),#080808}
+.contact h2{margin-bottom:14px}.contact p{color:#bdb9ae;margin-bottom:28px}
+footer{padding:36px 0;text-align:center;color:#5d5a53;font-size:13px}
+.rv{opacity:0;transform:translateY(24px);transition:.8s}.rv.in{opacity:1;transform:none}
+@media(max-width:820px){nav ul{display:none}.stats{grid-template-columns:1fr 1fr}.proj,.about{grid-template-columns:1fr}.sk{grid-template-columns:1fr}.proj{padding:22px}.hero{padding:70px 0 50px}section{padding:56px 0}}
+.hl{display:grid;grid-template-columns:1.4fr 1fr;gap:40px;align-items:center}.pt{justify-self:center;padding:10px;border-radius:50%;background:conic-gradient(from 200deg,var(--gold),#3a2a0a,var(--gold2),var(--gold));box-shadow:0 0 80px rgba(232,180,74,.25)}.pt img{display:block;width:min(360px,70vw);aspect-ratio:1;border-radius:50%;object-fit:cover;border:6px solid #050505}@media(max-width:820px){.hl{grid-template-columns:1fr}.pt{order:-1;margin-bottom:10px}.pt img{width:200px}}
+.mini{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}@media(max-width:820px){.mini{grid-template-columns:1fr}}
+@media(max-width:820px){.st b{font-size:24px;white-space:nowrap}}
+</style></head><body>
+<nav><div class="w"><div class="logo">NADY<b>.</b>DEV</div>
+<ul><li><a href="#work">Work</a></li><li><a href="#skills">Skills</a></li><li><a href="#about">About</a></li><li><a href="#contact">Contact</a></li></ul></div></nav>
+
+<header class="hero"><div class="w">
+<div class="hl"><div class="ht"><div class="tag"><i class="dot"></i> Open to work and internships</div>
+<h1>Nady Ahmed<br><span>Nady.</span></h1>
+<p class="lead">Software developer who builds real business software, not demos. My point-of-sale systems run on an iPad in a working cafe, every shift.</p>
+<div class="cta"><a class="btn p" href="#work">See my work</a><a class="btn g" href="mailto:nadydabor122@gmail.com">Email me</a></div></div><div class="pt"><img src="portrait.jpg" alt="Nady Ahmed Nady"></div></div>
+<div class="stats">
+<div class="st"><b>6</b><span>Projects built</span></div>
+<div class="st"><b>IT</b><span>Student at October 6 Technological University</span></div>
+<div class="st"><b>Live</b><span>Used in a real cafe</span></div>
+<div class="st"><b>Full-stack</b><span>Backend, frontend and databases</span></div>
+</div></div></header>
+
+<section id="work"><div class="w">
+<div class="k rv">Selected work</div><h2 class="rv">Software people use every day.</h2>
+
+<article class="proj rv"><div>
+<div class="k">Project 01</div><h3>Qashta Cashier</h3>
+<p>A cashier and cafe management app I built for the cafe where I work. It installs on an iPad home screen like a native app and replaces paper tabs.</p>
+<ul><li>Table tabs, guest count and live orders</li><li>Full menu by category with prices</li><li>Manager dashboard behind a password</li><li>Shift and day close, with daily and monthly reports</li><li>Printable receipts and kitchen tickets</li></ul>
+<div class="chips"><span class="chip">JavaScript</span><span class="chip">PWA</span><span class="chip">Offline storage</span><span class="chip">iPad UI</span></div>
+<a class="btn p" href="https://nadydabor122-cmd.github.io/qeshta-cashier/" target="_blank" rel="noopener">Open live app</a>
+</div>
+<div class="mock"><div class="bar"><i></i><i></i><i></i></div>
+<div class="row"><div class="tile a">Espresso</div><div class="tile">Latte</div><div class="tile">Cappuccino</div><div class="tile">Tea</div><div class="tile a">Shisha</div><div class="tile">Juice</div></div>
+<div class="tot"><span>Table 4 total</span><span>EGP 185</span></div></div></article>
+
+<article class="proj rv"><div>
+<div class="k">Project 02</div><h3>Fast Food POS</h3>
+<p>A Foodics-style point-of-sale for fast food. Built phone-responsive, with a full back office behind the register.</p>
+<ul><li>Register with item options and add-ons</li><li>Payment screen with numpad and methods</li><li>Kitchen display, orders, customers, staff and inventory</li><li>Reports and a cash drawer</li><li>Layouts for phone, tablet and desktop</li></ul>
+<div class="chips"><span class="chip">JavaScript</span><span class="chip">Responsive CSS</span><span class="chip">PWA</span><span class="chip">POS logic</span></div>
+<a class="btn p" href="https://nadydabor122-cmd.github.io/fast-food/" target="_blank" rel="noopener">Open live app</a>
+</div>
+<div class="mock"><div class="bar"><i></i><i></i><i></i></div>
+<div class="row"><div class="tile a">Burger</div><div class="tile">Fries</div><div class="tile">Wrap</div><div class="tile">Combo</div><div class="tile a">Cola</div><div class="tile">Dessert</div></div>
+<div class="tot"><span>Pay now</span><span>EGP 132</span></div></div></article>
+<div class="k rv" style="margin:40px 0 18px">More projects</div><div class="mini"><div class="box rv"><div class="k">Project 03</div><h3 style="margin:8px 0">Smart Stick</h3><p style="color:#bdb9ae">A smart stick (العصا الذكية) for blind and visually impaired people.</p></div><div class="box rv"><div class="k">Project 04</div><h3 style="margin:8px 0">Charity Website</h3><p style="color:#bdb9ae">A website for a charity.</p></div><div class="box rv"><div class="k">Project 05</div><h3 style="margin:8px 0">Gym Showcase</h3><p style="color:#bdb9ae">A showcase website for a gym.</p></div><div class="box rv"><div class="k">Project 06</div><h3 style="margin:8px 0">Restaurant Website</h3><p style="color:#bdb9ae">A website for a restaurant.</p></div></div>
+</div></section>
+
+<section id="skills"><div class="w">
+<div class="k rv">Toolbox</div><h2 class="rv">What I work with.</h2>
+<div class="sk rv">
+<div class="box"><h4>Languages</h4><div class="chips"><span class="chip">Java</span><span class="chip">C</span><span class="chip">C++</span><span class="chip">Python</span><span class="chip">JavaScript</span></div></div>
+<div class="box"><h4>Web</h4><div class="chips"><span class="chip">Frontend</span><span class="chip">Backend</span><span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">JavaScript</span><span class="chip">Responsive UI</span><span class="chip">PWA</span></div></div>
+<div class="box"><h4>Data and systems</h4><div class="chips"><span class="chip">Databases</span><span class="chip">POS systems</span><span class="chip">Reports and dashboards</span></div></div>
+<div class="box"><h4>Tools</h4><div class="chips"><span class="chip">Git</span><span class="chip">GitHub</span><span class="chip">GitHub Pages</span></div></div>
+<div class="box" style="grid-column:1/-1"><h4>Education</h4><div class="chips"><span class="chip">Information Technology (IT)</span><span class="chip">October 6 Technological University (OTU)</span></div></div>
+</div></div></section>
+
+<section id="about"><div class="w about">
+<div><div class="k rv">About</div><h2 class="rv">I learn by shipping.</h2></div>
+<div class="rv"><p>I study Information Technology at October 6 Technological University (OTU) in Egypt. I also work shifts in a cafe, so I know what a cashier needs at 2 AM when the line is long and the screen has to just work.</p>
+<p>That is how my projects start. I see a real problem, build the fix, put it in front of real users, and improve it from their feedback. I am looking for a team where I can keep building and learn from strong engineers.</p></div>
+</div></section>
+
+<section id="contact"><div class="w"><div class="contact rv">
+<div class="k">Let's work together</div><h2>Hiring? Let's talk.</h2>
+<p>Internships, junior roles and freelance projects. I reply fast.</p>
+<div class="cta" style="justify-content:center"><a class="btn p" href="mailto:nadydabor122@gmail.com">nadydabor122@gmail.com</a><a class="btn g" href="https://github.com/nadydabor122-cmd" target="_blank" rel="noopener">GitHub</a></div>
+</div></div></section>
+<footer>&copy; 2026 Nady Ahmed Nady</footer>
+<script>
+const io=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting)x.target.classList.add('in')}),{threshold:.12});
+document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+</script></body></html>
